@@ -32,7 +32,7 @@ importers:
       '@types/lodash-es': ^4.17.6
       '@types/node': '*'
       '@types/sass': ^1.43.1
-      '@vitejs/plugin-vue': ^2.3.3
+      '@vitejs/plugin-vue': ^3.0.3
       '@vitejs/plugin-vue-jsx': ^1.3.10
       '@vitest/ui': 0.16.0
       '@vue/test-utils': ^2.0.0
@@ -116,7 +116,7 @@ importers:
       '@types/jsdom': 16.2.14
       '@types/node': 17.0.40
       '@types/sass': 1.43.1
-      '@vitejs/plugin-vue': 2.3.3_vue@3.2.37
+      '@vitejs/plugin-vue': 3.0.3_vue@3.2.37
       '@vitejs/plugin-vue-jsx': 1.3.10
       '@vitest/ui': 0.16.0
       '@vue/test-utils': 2.0.0_vue@3.2.37
@@ -201,7 +201,7 @@ importers:
       '@vueuse/core': 9.1.0_vue@3.2.37
       axios: 0.27.2
       clipboard-copy: 4.0.1
-      element-plus: 2.2.12_vue@3.2.37
+      element-plus: 2.2.14_vue@3.2.37
       markdown-it: 13.0.1
       normalize.css: 8.0.1
       nprogress: 0.2.0
@@ -243,7 +243,7 @@ importers:
       '@pnpm/types': ^8.4.0
       '@rollup/plugin-commonjs': ^22.0.1
       '@rollup/plugin-node-resolve': ^13.3.0
-      '@vitejs/plugin-vue': ^2.3.3
+      '@vitejs/plugin-vue': ^3.0.3
       '@vitejs/plugin-vue-jsx': ^1.3.10
       chalk: ^5.0.1
       components-helper: ^2.0.0
@@ -265,7 +265,7 @@ importers:
       '@pnpm/logger': 4.0.0
       '@rollup/plugin-commonjs': 22.0.1_rollup@2.75.7
       '@rollup/plugin-node-resolve': 13.3.0_rollup@2.75.7
-      '@vitejs/plugin-vue': 2.3.3_vue@3.2.37
+      '@vitejs/plugin-vue': 3.0.3_vue@3.2.37
       '@vitejs/plugin-vue-jsx': 1.3.10
       chalk: 5.0.1
       components-helper: 2.0.0
@@ -463,7 +463,7 @@ importers:
   play:
     specifiers:
       '@element-plus/icons-vue': ^2.0.6
-      '@vitejs/plugin-vue': ^2.3.3
+      '@vitejs/plugin-vue': ^3.0.3
       unplugin-vue-components: ^0.20.1
       vite: ^2.9.13
       vite-plugin-inspect: ^0.5.0
@@ -473,7 +473,7 @@ importers:
       '@element-plus/icons-vue': 2.0.6_vue@3.2.37
       vue: 3.2.37
     devDependencies:
-      '@vitejs/plugin-vue': 2.3.3_vite@2.9.13+vue@3.2.37
+      '@vitejs/plugin-vue': 3.0.3_vite@2.9.13+vue@3.2.37
       unplugin-vue-components: 0.20.1_vite@2.9.13+vue@3.2.37
       vite: 2.9.13
       vite-plugin-inspect: 0.5.0_vite@2.9.13
@@ -3175,10 +3175,6 @@ packages:
       '@types/node': 17.0.40
     dev: true
 
-  /@types/web-bluetooth/0.0.14:
-    resolution: {integrity: sha512-5d2RhCard1nQUC3aHcq/gHzWYO6K0WJmAbjO7mQJgCQKtZpgXxv1rOM6O/dBDhDYYVutk1sciOgNSe+5YyfM8A==}
-    dev: false
-
   /@types/web-bluetooth/0.0.15:
     resolution: {integrity: sha512-w7hEHXnPMEZ+4nGKl/KDRVpxkwYxYExuHOYXyzIzCDzEZ9ZCGMAewulr9IqJu2LR4N37fcnb1XVeuZ09qgOxhA==}
     dev: false
@@ -3475,11 +3471,25 @@ packages:
       vue: 3.2.37
     dev: true
 
-  /@vitejs/plugin-vue/2.3.3_vue@3.2.37:
-    resolution: {integrity: sha512-SmQLDyhz+6lGJhPELsBdzXGc+AcaT8stgkbiTFGpXPe8Tl1tJaBw1A6pxDqDuRsVkD8uscrkx3hA7QDOoKYtyw==}
-    engines: {node: '>=12.0.0'}
+  /@vitejs/plugin-vue/3.0.3_vite@2.9.13+vue@3.2.37:
+    resolution: {integrity: sha512-U4zNBlz9mg+TA+i+5QPc3N5lQvdUXENZLO2h0Wdzp56gI1MWhqJOv+6R+d4kOzoaSSq6TnGPBdZAXKOe4lXy6g==}
+    engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
-      vite: ^2.5.10
+      vite: ^3.0.0
+      vue: ^3.2.25
+    peerDependenciesMeta:
+      vite:
+        optional: true
+    dependencies:
+      vite: 2.9.13
+      vue: 3.2.37
+    dev: true
+
+  /@vitejs/plugin-vue/3.0.3_vue@3.2.37:
+    resolution: {integrity: sha512-U4zNBlz9mg+TA+i+5QPc3N5lQvdUXENZLO2h0Wdzp56gI1MWhqJOv+6R+d4kOzoaSSq6TnGPBdZAXKOe4lXy6g==}
+    engines: {node: ^14.18.0 || >=16.0.0}
+    peerDependencies:
+      vite: ^3.0.0
       vue: ^3.2.25
     peerDependenciesMeta:
       vite:
@@ -3638,24 +3648,6 @@ packages:
       '@types/node': 17.0.40
     dev: true
 
-  /@vueuse/core/8.7.5_vue@3.2.37:
-    resolution: {integrity: sha512-tqgzeZGoZcXzoit4kOGLWJibDMLp0vdm6ZO41SSUQhkhtrPhAg6dbIEPiahhUu6sZAmSYvVrZgEr5aKD51nrLA==}
-    peerDependencies:
-      '@vue/composition-api': ^1.1.0
-      vue: ^2.6.0 || ^3.2.0
-    peerDependenciesMeta:
-      '@vue/composition-api':
-        optional: true
-      vue:
-        optional: true
-    dependencies:
-      '@types/web-bluetooth': 0.0.14
-      '@vueuse/metadata': 8.7.5
-      '@vueuse/shared': 8.7.5_vue@3.2.37
-      vue: 3.2.37
-      vue-demi: 0.13.1_vue@3.2.37
-    dev: false
-
   /@vueuse/core/9.1.0_vue@3.2.37:
     resolution: {integrity: sha512-BIroqvXEqt826aE9r3K5cox1zobuPuAzdYJ36kouC2TVhlXvFKIILgFVWrpp9HZPwB3aLzasmG3K87q7TSyXZg==}
     dependencies:
@@ -3668,27 +3660,8 @@ packages:
       - vue
     dev: false
 
-  /@vueuse/metadata/8.7.5:
-    resolution: {integrity: sha512-emJZKRQSaEnVqmlu39NpNp8iaW+bPC2kWykWoWOZMSlO/0QVEmO/rt8A5VhOEJTKLX3vwTevqbiRy9WJRwVOQg==}
-    dev: false
-
   /@vueuse/metadata/9.1.0:
     resolution: {integrity: sha512-8OEhlog1iaAGTD3LICZ8oBGQdYeMwByvXetOtAOZCJOzyCRSwqwdggTsmVZZ1rkgYIEqgUBk942AsAPwM21s6A==}
-    dev: false
-
-  /@vueuse/shared/8.7.5_vue@3.2.37:
-    resolution: {integrity: sha512-THXPvMBFmg6Gf6AwRn/EdTh2mhqwjGsB2Yfp374LNQSQVKRHtnJ0I42bsZTn7nuEliBxqUrGQm/lN6qUHmhJLw==}
-    peerDependencies:
-      '@vue/composition-api': ^1.1.0
-      vue: ^2.6.0 || ^3.2.0
-    peerDependenciesMeta:
-      '@vue/composition-api':
-        optional: true
-      vue:
-        optional: true
-    dependencies:
-      vue: 3.2.37
-      vue-demi: 0.13.1_vue@3.2.37
     dev: false
 
   /@vueuse/shared/9.1.0_vue@3.2.37:
@@ -5283,8 +5256,8 @@ packages:
   /electron-to-chromium/1.4.147:
     resolution: {integrity: sha512-czclPqxLMPqPMkahKcske4TaS5lcznsc26ByBlEFDU8grTBVK9C5W6K9I6oEEhm4Ai4jTihGnys90xY1yjXcRg==}
 
-  /element-plus/2.2.12_vue@3.2.37:
-    resolution: {integrity: sha512-g/hIHj3b+dND2R3YRvyvCJtJhQvR7lWvXqhJaoxaQmajjNWedoe4rttxG26fOSv9YCC2wN4iFDcJHs70YFNgrA==}
+  /element-plus/2.2.14_vue@3.2.37:
+    resolution: {integrity: sha512-V5Pis0OHhePg1RgVogZrcefaVl8vjVn4Pn9Qsh/t2CbFgjg9kKOYFqf/tuP3ObSXGm3X89hpe0W+nLVAsaFnpw==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
@@ -5294,7 +5267,7 @@ packages:
       '@popperjs/core': /@sxzz/popperjs-es/2.11.7
       '@types/lodash': 4.14.182
       '@types/lodash-es': 4.17.6
-      '@vueuse/core': 8.7.5_vue@3.2.37
+      '@vueuse/core': 9.1.0_vue@3.2.37
       async-validator: 4.2.5
       dayjs: 1.11.3
       escape-html: 1.0.3
