@@ -52,6 +52,8 @@ import { castArray } from '@element-plus/utils'
 import { basicDateTableProps } from '../props/basic-date-table'
 import { buildPickerTable } from '../utils'
 import ElDatePickerCell from './basic-cell-render'
+import 'core-js/modules/es.array.flat.js'
+import 'core-js/modules/es.array.unscopables.flat.js'
 
 import type { Dayjs } from 'dayjs'
 import type { DateCell } from '../date-picker.type'
@@ -98,6 +100,7 @@ const WEEKS = computed(() => {
 })
 
 const hasCurrent = computed<boolean>(() => {
+  // @ts-ignore imported core-js
   return rows.value.flat().some((row) => {
     return row.isCurrent
   })

@@ -71,6 +71,7 @@
   },
   "devDependencies": {
     "@types/node": "*",
+    "core-js": "^3.25.0",
     "csstype": "^2.6.20",
     "vue": "^3.2.37",
     "vue-router": "^4.0.16"
